@@ -12,7 +12,12 @@ Creates an instance of `SplytPartnerSDK`, connects and signs in the partner. In 
 Sends a **request message** to the Splyt Backend and waits for the response. Once response is received, a returned promise is resolved or rejected depending on a response message from the server. Moreover, promise might be rejected if SDK fails to deliver a message to the backend.
 
 ```js
-connection.request('partner.sign-in')
+const data = {
+  login: 'username',
+  password: 'password'
+};
+
+connection.request('partner.sign-in', data)
 	.then(() => /* handle sucessfull response */)
 	.catch((err) => /* handle erroneous response */);
 ```
@@ -32,7 +37,7 @@ Every request or push message to the SDK from Splyt Backend is converted into ev
 ```js
 //example of GeneratorFunction usage as a callbackFunction
 connection.on('endpoint-method-name', function *(data) {
-  //handle request
+  //handle request and send response
   
   return { response_data: 'some-data' };
 });
