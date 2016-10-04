@@ -8,3 +8,7 @@ module.exports = {
    */
   Error: require('./lib/error'),
 };
+
+process.on('unhandledRejection', (err) => {
+  console.warn('Unhandled rejection', err);
+});

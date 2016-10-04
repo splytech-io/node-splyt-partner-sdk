@@ -20,6 +20,10 @@ partner.on('partner.journey.estimate', function *(data) {
 });
 
 partner.on('partner.new-trip-request', function *(data) {
+  if (data.passenger_groups[0].pickup.address === '83 Baker Street') {
+    throw new SplytPartnerSDK.Error.BAD_REQUEST('invalid pickup address');
+  }
+
   return {};
 });
 
