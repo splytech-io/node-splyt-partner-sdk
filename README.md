@@ -25,7 +25,7 @@ connection.request('partner.sign-in', data)
 ### .push(method: String, data: Object): Promise
 Sends a **push message** to the Splyt Backend. Function returns a Promise which is resolved if message is delivered to the server.
 
-### .on(evetName: String, callbackFunction: Function): SplytPartnerSDK
+### .on(eventName: String, callbackFunction: Function): SplytPartnerSDK
 All events are implemented using `co-event-emitter` library. Only one event subscriber is allowed. It accepts **GeneratorFunctions**, **Promises** and **ThunkifiedFunctions** as callback functions. 
 
 ```js
