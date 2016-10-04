@@ -1,0 +1,28 @@
+{
+  "name": "@splytech-io/splyt-partner-sdk",
+  "version": "0.0.1",
+  "description": "Splyt Partner SDK",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/splytech-io/node-splyt-partner-sdk.git"
+  },
+  "keywords": [
+    "splyt",
+    "partner",
+    "sdk"
+  ],
+  "author": "Andrius Skerla",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/splytech-io/node-splyt-partner-sdk/issues"
+  },
+  "homepage": "https://github.com/splytech-io/node-splyt-partner-sdk#readme",
+  "dependencies": {
+    "@rainder/defer": "^0.2.0",
+    "@splytech-io/splyt-ws-connection": "0.0.1"
+  }
+}
