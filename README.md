@@ -55,7 +55,7 @@ const SplytPartnerSDK = require('@splytech-io/splyt-partner-sdk');
 
 const partner = new SplytPartnerSDK.Connection('wss://wsapi.sandbox.splytech.io', {
   login: 'username',
-  password: 'password'
+  password: 'password',
 });
 
 //ie using resolved Promise
@@ -65,7 +65,7 @@ partner.on('partner.journey.estimate', (data) => {
   return Promise.resolve({
     price_range: {
       lower: 1234,
-      upper: 1566
+      upper: 1566,
     }
   });
 });
