@@ -9,7 +9,9 @@ Partner wrapper over `@splytech-io/splyt-ws-connection` module
 Creates an instance of `SplytPartnerSDK`, connects and signs in the partner. In case if connection is dropped SDK reconnects and relogins into Splyt automatically.
 
 ### .request(method: String, data: Object): Promise
-Sends a **request message** to the Splyt Backend and waits for the response. Once response is received, a returned promise is resolved or rejected depending on a response message from the server. Moreover, promise might be rejected if SDK fails to deliver a message to the backend.
+Sends a **request message** to the Splyt Backend and waits for the response. Once response is received a returned promise is resolved or rejected depending on a response message from the server. 
+
+**Note:** promise might be rejected if SDK fails to deliver a message to the backend.
 
 ```js
 const data = {
