@@ -34,7 +34,7 @@ All events are implemented using `co-event-emitter` library. Only one event subs
 connection.on('event-name', callbackFunction);
 ```
 
-Every request or push message to the SDK from Splyt Backend is converted into event and **endpoint method name** is used as **event name**. You can subscribe to specific method calls as following:
+Every request or push message from Splyt Backend to the SDK is converted into event where **endpoint method name** is used as **event name**. You can subscribe to specific method calls as following:
 
 ```js
 //example of GeneratorFunction usage as a callbackFunction
