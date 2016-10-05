@@ -23,7 +23,7 @@
   "homepage": "https://github.com/splytech-io/node-splyt-partner-sdk#readme",
   "dependencies": {
     "@rainder/defer": "^0.2.0",
-    "@splytech-io/splyt-ws-connection": "0.0.1",
+    "@splytech-io/splyt-ws-connection": "^0.0.2",
     "co": "^4.6.0"
   },
   "devDependencies": {
