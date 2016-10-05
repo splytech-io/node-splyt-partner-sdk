@@ -2,6 +2,16 @@
 
 Partner wrapper over `@splytech-io/splyt-ws-connection` module
 
+## Prerequisities
+
+* Node > v4.0 
+
+## Installation
+
+```bash
+$ npm install @splytech-io/splyt-partner-sdk
+```
+
 ## SplytPartnerSDK Class API
 
 ### constructor(serverUrl: String, credentials: Object)
