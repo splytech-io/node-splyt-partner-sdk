@@ -1,6 +1,6 @@
 {
   "name": "@splytech-io/splyt-partner-sdk",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Splyt Partner SDK",
   "main": "index.js",
   "scripts": {
