@@ -4,7 +4,7 @@ Partner wrapper over `@splytech-io/splyt-ws-connection` module
 
 ## Prerequisities
 
-* Node > v4.0 
+* Node >= v6.0.0 
 
 ## Installation
 
