@@ -1,7 +1,7 @@
 'use strict';
 
 module.exports = {
-  Connection: require('./lib/connection'),
+  Client: require('./lib/client'),
 
   /**
    * @class SplytPartnerSDKError

@@ -29,7 +29,7 @@ const data = {
   password: 'password'
 };
 
-connection.request('partner.sign-in', data)
+partner.request('partner.sign-in', data)
 	.then(() => /* handle sucessfull response */)
 	.catch((err) => /* handle erroneous response */);
 ```
@@ -41,14 +41,14 @@ Sends a **push message** to the Splyt Backend. Function returns a Promise which 
 All events are implemented using `@rainder/co-event-emitter` library. Only one event subscriber is allowed. It accepts [GeneratorFunctions](https://www.npmjs.com/package/co), [Promises](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Promise) and [Thunks](https://www.npmjs.com/package/co#thunks) as callback functions. 
 
 ```js
-connection.on('event-name', callbackFunction);
+partner.on('event-name', callbackFunction);
 ```
 
 Every request or push message from Splyt Backend to the SDK is converted into event where **endpoint method name** is used as **event name**. You can subscribe to specific method calls as following:
 
 ```js
 //example of GeneratorFunction usage as a callbackFunction
-connection.on('endpoint-method-name', function *(data) {
+partner.on('endpoint-method-name', function *(data) {
   //handle request and send response
   
   return { response_data: 'some-data' };
@@ -65,7 +65,7 @@ If SDK receives a message to which you have not subscribed, SDK outputs a warnin
 ```js
 const SplytPartnerSDK = require('@splytech-io/splyt-partner-sdk');
 
-const partner = new SplytPartnerSDK.Connection('wss://wsapi.sandbox.splytech.io', {
+const partner = new SplytPartnerSDK.Client('wss://wsapi.sandbox.splytech.io', {
   login: 'username',
   password: 'password',
 });

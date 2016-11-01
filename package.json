@@ -24,7 +24,7 @@
   "dependencies": {
     "@rainder/co-event-emitter": "^0.2.0",
     "@rainder/defer": "^0.2.0",
-    "@splytech-io/splyt-ws-connection": "^0.1.1",
+    "@splytech-io/splyt-ws-connection": "^0.2.0",
     "co": "^4.6.0"
   },
   "devDependencies": {
