@@ -25,7 +25,8 @@
     "@rainder/co-event-emitter": "^0.2.0",
     "@rainder/defer": "^0.2.0",
     "@splytech-io/splyt-ws-connection": "^0.2.0",
-    "co": "^4.6.0"
+    "co": "^4.6.0",
+    "debug": "^2.3.3"
   },
   "devDependencies": {
     "eslint": "^3.7.1"
